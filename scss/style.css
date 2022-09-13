@@ -1,4 +1,5 @@
-body div {
+body div.wrapper {
   width: 1440px;
   margin: 0 auto;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
