@@ -10,6 +10,10 @@ button{
     line-height: 29px;
     color: #FFFFFF;
     padding: 6px 13px;
+    &:hover{
+        background: #447C0B;
+    }
+
 
 }
 
@@ -36,6 +40,9 @@ body{
                     line-height: 34px;
                     letter-spacing: 0.075em;
                     color: #616B57;
+                    &:hover{
+                        color: #447C0B;
+                    }                
                    }
                 }
             }
@@ -46,6 +53,7 @@ body{
             flex-wrap: wrap;
             justify-content: space-between;
             .wrap_slider{
+                position: relative;
                 .slaider_item{
                     display: grid;
                     //flex-wrap: wrap;
@@ -122,8 +130,28 @@ body{
                         }
                     }
                 }
+                div.slider_btn{
+                    div.btn_top, .btn_botton{
+                        position: absolute;
+                        top: -26px;
+                        right: 267px;
+                        background: #616B57;
+                        border-radius: 25px;
+                        display: inline-block;
+                        padding: 12px 30px;
+                        &:hover{
+                            background: #447C0B
+                        }
+                    }
+                    div.btn_botton{
+                        top: auto;
+                        bottom: -26px;
+                        img{
+                            transform: rotate(180deg);
+                        }
+                    } 
+                }
             }
         }
-    
     }
 }

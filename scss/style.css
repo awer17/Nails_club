@@ -10,6 +10,9 @@ button {
   color: #FFFFFF;
   padding: 6px 13px;
 }
+button:hover {
+  background: #447C0B;
+}
 
 body {
   max-width: 1440px;
@@ -38,11 +41,17 @@ body .wrapper .header_wrapper header ul a {
   letter-spacing: 0.075em;
   color: #616B57;
 }
+body .wrapper .header_wrapper header ul a:hover {
+  color: #447C0B;
+}
 body .wrapper section.wrap_main {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+body .wrapper section.wrap_main .wrap_slider {
+  position: relative;
 }
 body .wrapper section.wrap_main .wrap_slider .slaider_item {
   display: grid;
@@ -116,4 +125,23 @@ body .wrapper section.wrap_main .wrap_slider .slaider_item .imges_item img {
   display: inline-block;
   width: 201px;
   height: 178px;
+}
+body .wrapper section.wrap_main .wrap_slider div.slider_btn div.btn_top, body .wrapper section.wrap_main .wrap_slider div.slider_btn .btn_botton {
+  position: absolute;
+  top: -26px;
+  right: 267px;
+  background: #616B57;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 12px 30px;
+}
+body .wrapper section.wrap_main .wrap_slider div.slider_btn div.btn_top:hover, body .wrapper section.wrap_main .wrap_slider div.slider_btn .btn_botton:hover {
+  background: #447C0B;
+}
+body .wrapper section.wrap_main .wrap_slider div.slider_btn div.btn_botton {
+  top: auto;
+  bottom: -26px;
+}
+body .wrapper section.wrap_main .wrap_slider div.slider_btn div.btn_botton img {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=style.css.map */
