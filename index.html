@@ -98,29 +98,30 @@
             </div>
 
             <div class="order_menu">
-                <div class="calendar">
-        
+                <div class="calendar">      
                 </div>
-                <form action="order">
+                <form id="order" action="order">
                     <div class="date_time">
                         <p class="date">26.06.22</p>
                         <select name="time_work" id="">
-                            <option value="1">9:00</option>
-                            <option value="2">9:30</option>
-                            <option value="3">10:00</option>
+                            <option value="9:00">9:00</option>
+                            <option value="9:30">9:30</option>
+                            <option value="10:00">10:00</option>
                             <option value="4">15:00</option>
                             <option value="5">15:30</option>
                             <option value="6">16:00</option>
                             <option value="7">18:00</option>
                         </select>
                     </div>
-                    <p class="item_select">categories services</p>
+
+                    <p class="item_select">Categories services</p>
                     <select name="neme_master" id="" required="required">
                         <option value="1">Hairdressing services</option>
                         <option value="1">Nail services</option>
                         <option value="2">Vejasta services</option>
                         <option value="3">Cosmetology services</option>
                     </select>
+
                     <p class="item_select">Master name</p>
                     <select name="neme_master" id="" required="required">
                             <option value="1">Sarah Connor</option>
@@ -128,6 +129,7 @@
                             <option value="2">Jessica larsan</option>
                             <option value="3">Larisa Komarova</option>
                     </select>
+                    
                     <p class="item_select">Service name</p>
                     <select name="neme_master" id="" required="required">
                             <option value="1">men's haircut</option>
@@ -135,7 +137,7 @@
                             <option value="2">hair coloring</option>
                             <option value="3">hair highlights</option>
                     </select>
-                    <button class="btn">Sign up</button>
+                    <button class="btn order_sabmit">Sign up</button>
                 </form>
             </div>
         </section>
