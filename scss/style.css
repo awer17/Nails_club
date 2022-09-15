@@ -3,8 +3,11 @@ body {
   font-size: 50px;
 }
 body div.wrapper {
-  font-family: Inter-SemiBold;
+  font-family: "Inter-SemiBold";
   width: 1440px;
   margin: 0 auto;
   font-size: 50px;
+}
+body div.wrapper .heder_wrapper {
+  font-family: "Inter-Regular";
 }/*# sourceMappingURL=style.css.map */

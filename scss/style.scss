@@ -1,10 +1,12 @@
 body{
-    padding: 100px;
-    font-size: 50px;
-    div.wrapper{
-        font-family: Inter-SemiBold;
-        width: 1440px;
+    .wrapper{
+        width: 1302px;
         margin: 0 auto;
-        font-size: 50px;
+        margin-top: 23px;
+        .heder_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 }
