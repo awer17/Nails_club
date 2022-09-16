@@ -67,8 +67,7 @@ body .wrapper section.wrap_main .wrap_slider .slaider_item {
 body .wrapper section.wrap_main .wrap_slider .slaider_item img {
   width: 142px;
   height: 165px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 6px;
 }
 body .wrapper section.wrap_main .wrap_slider .slaider_item .items_content {
@@ -268,4 +267,4 @@ body footer .footer_wrapper .developer {
 }
 body footer .footer_wrapper .developer a {
   color: #000000;
-}/*# sourceMappingURL=style.css.map */
+}

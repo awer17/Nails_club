@@ -239,4 +239,47 @@ body{
             }
         }
     }
+    footer{
+        width: 100%;
+        margin-top: 40px;
+        background: #ADBB9F;
+        padding: 23px 0;
+        .footer_wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 1302px;
+            margin: 0 auto;
+            align-items: center;
+            a{
+                text-decoration: none;
+                &:first-child{
+                    font-family: 'Imprima';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: #000000;
+                }
+                &:last-child{
+                    justify-self: end;
+                    img{
+                        text-align: end;
+                    }
+                }
+            }
+            .developer{
+                text-align: center;
+                font-family: 'Imprima';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 29px;
+                color: #000000;
+                a{
+                    color: #000000;
+                }
+            }
+        }
+    }
+
 }
