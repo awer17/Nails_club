@@ -117,7 +117,6 @@ function showCalendar(month, year) {
           }
 
           datePicked.innerHTML = month + "." + date + "." + year;
-          console.log(date);
         };
 
         if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
