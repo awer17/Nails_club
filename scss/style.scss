@@ -379,13 +379,24 @@ button{
     border-top: 1px solid #616c57;
 }
 #date-picked {
-    left: 13px;
+    left: 19px;
     text-align: start;
-    color: #616d57;
+    color: #000000;
     border-top: none;
     padding-top: 0px;
-    font-size: 19pt;
-    font-weight: bold;
     position: absolute;
-    top: 402px;
+    top: 410px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 48px;
+    letter-spacing: 0.075em;
+    margin: 0;
+}
+.date-picker{
+    border-color: #616c57;
+    span{
+        color: #616c57;
+    }
 }

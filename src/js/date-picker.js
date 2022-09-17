@@ -107,7 +107,16 @@ function showCalendar(month, year) {
           }
 
           currentTarget.classList.add("selected");
-          datePicked.innerHTML = date + " " + monthsArr[month] + " " + year;
+          // Date  <p>
+          month = month + 1;
+          if(month < 10){
+            month = "0" + month;
+          }
+          if(date < 10){
+            date = "0" + date;
+          }
+          datePicked.innerHTML = month + "." + date + "." + year;
+          console.log(date)
         }
 
         if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
