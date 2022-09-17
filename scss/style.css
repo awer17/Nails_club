@@ -23,7 +23,7 @@ button:hover {
   box-sizing: border-box;
   max-width: 1302px;
   margin: 0 auto;
-  margin-top: 23px;
+  padding-top: 23px;
 }
 .wrap .wrapper .header_wrapper {
   display: flex;
@@ -272,6 +272,7 @@ button:hover {
 }
 .wrap .modal_submit {
   position: absolute;
+  z-index: 2;
   top: calc(50% - 258px);
   left: calc(50% - 210px);
   text-align: center;
@@ -289,6 +290,11 @@ button:hover {
   width: 320px;
   margin: 0 auto;
   margin-bottom: 24px;
+}
+.wrap .modal_submit p.s_end {
+  margin-top: 10px;
+  margin-bottom: 195px;
+  font-size: 24px;
 }
 .wrap .modal_submit label {
   font-family: "Inter";
@@ -351,4 +357,12 @@ button:hover {
   display: block;
   margin: 0 auto;
   margin-bottom: 38px;
+}
+.wrap div.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  top: 0;
 }/*# sourceMappingURL=style.css.map */
