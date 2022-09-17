@@ -19,21 +19,21 @@ button:hover {
   margin: 0 auto;
   position: relative;
 }
-.wrap .wrapper {
+.wrap .wrapper_body {
   box-sizing: border-box;
   max-width: 1302px;
   margin: 0 auto;
   padding-top: 23px;
 }
-.wrap .wrapper .header_wrapper {
+.wrap .wrapper_body .header_wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.wrap .wrapper .header_wrapper header ul {
+.wrap .wrapper_body .header_wrapper header ul {
   list-style-type: none;
 }
-.wrap .wrapper .header_wrapper header ul a {
+.wrap .wrapper_body .header_wrapper header ul a {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -42,19 +42,19 @@ button:hover {
   letter-spacing: 0.075em;
   color: #616B57;
 }
-.wrap .wrapper .header_wrapper header ul a:hover {
+.wrap .wrapper_body .header_wrapper header ul a:hover {
   color: #447C0B;
 }
-.wrap .wrapper section.wrap_main {
+.wrap .wrapper_body section.wrap_main {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.wrap .wrapper section.wrap_main .wrap_slider {
+.wrap .wrapper_body section.wrap_main .wrap_slider {
   position: relative;
 }
-.wrap .wrapper section.wrap_main .wrap_slider .slaider_item {
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item {
   display: grid;
   grid-template-columns: 142px 1fr;
   width: 880px;
@@ -65,20 +65,20 @@ button:hover {
   box-sizing: border-box;
   margin-bottom: 6px;
 }
-.wrap .wrapper section.wrap_main .wrap_slider .slaider_item img {
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item img {
   width: 142px;
   height: 165px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 6px;
 }
-.wrap .wrapper section.wrap_main .wrap_slider .slaider_item .items_content {
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .items_content {
   justify-self: end;
   width: 676px;
   display: grid;
   grid-template-columns: 1fr 354px;
 }
-.wrap .wrapper section.wrap_main .wrap_slider .slaider_item .items_content div h2 {
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .items_content div h2 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -87,7 +87,7 @@ button:hover {
   color: #000000;
   margin: 0;
 }
-.wrap .wrapper section.wrap_main .wrap_slider .slaider_item .items_content div p {
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .items_content div p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -97,11 +97,11 @@ button:hover {
   margin-top: 0;
   margin-bottom: 14px;
 }
-.wrap .wrapper section.wrap_main .wrap_slider .slaider_item .items_content ul {
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .items_content ul {
   margin: 0;
   padding: 0;
 }
-.wrap .wrapper section.wrap_main .wrap_slider .slaider_item .items_content ul li {
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .items_content ul li {
   list-style-type: none;
   font-family: "Imprima";
   font-style: normal;
@@ -110,24 +110,24 @@ button:hover {
   line-height: 23px;
   color: #000000;
 }
-.wrap .wrapper section.wrap_main .wrap_slider .slaider_item .items_content button {
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .items_content button {
   display: block;
   align-self: end;
   justify-self: end;
 }
-.wrap .wrapper section.wrap_main .wrap_slider .slaider_item .imges_item {
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .imges_item {
   margin-top: 18px;
   display: flex;
   justify-content: space-between;
   grid-column: 1/span 2;
   width: 100%;
 }
-.wrap .wrapper section.wrap_main .wrap_slider .slaider_item .imges_item img {
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .imges_item img {
   display: inline-block;
   width: 201px;
   height: 178px;
 }
-.wrap .wrapper section.wrap_main .wrap_slider div.slider_btn div.btn_top, .wrap .wrapper section.wrap_main .wrap_slider div.slider_btn .btn_botton {
+.wrap .wrapper_body section.wrap_main .wrap_slider div.slider_btn div.btn_top, .wrap .wrapper_body section.wrap_main .wrap_slider div.slider_btn .btn_botton {
   position: absolute;
   top: -26px;
   right: 267px;
@@ -136,17 +136,17 @@ button:hover {
   display: inline-block;
   padding: 12px 30px;
 }
-.wrap .wrapper section.wrap_main .wrap_slider div.slider_btn div.btn_top:hover, .wrap .wrapper section.wrap_main .wrap_slider div.slider_btn .btn_botton:hover {
+.wrap .wrapper_body section.wrap_main .wrap_slider div.slider_btn div.btn_top:hover, .wrap .wrapper_body section.wrap_main .wrap_slider div.slider_btn .btn_botton:hover {
   background: #447C0B;
 }
-.wrap .wrapper section.wrap_main .wrap_slider div.slider_btn div.btn_botton {
+.wrap .wrapper_body section.wrap_main .wrap_slider div.slider_btn div.btn_botton {
   top: auto;
   bottom: -26px;
 }
-.wrap .wrapper section.wrap_main .wrap_slider div.slider_btn div.btn_botton img {
+.wrap .wrapper_body section.wrap_main .wrap_slider div.slider_btn div.btn_botton img {
   transform: rotate(180deg);
 }
-.wrap .wrapper section.wrap_main .order_menu {
+.wrap .wrapper_body section.wrap_main .order_menu {
   height: 796px;
   padding: 0 15px;
   background-repeat: 6px;
@@ -154,23 +154,24 @@ button:hover {
   border-radius: 10px;
   position: relative;
 }
-.wrap .wrapper section.wrap_main .order_menu div.calendar {
+.wrap .wrapper_body section.wrap_main .order_menu div.calendar {
   background: #f2f0f0;
   border-radius: 6px;
   width: 370px;
-  height: 320px;
+  height: 370px;
   margin: 15px 0;
 }
-.wrap .wrapper section.wrap_main .order_menu form#order {
+.wrap .wrapper_body section.wrap_main .order_menu form#order {
   padding-top: 11px;
 }
-.wrap .wrapper section.wrap_main .order_menu form#order .date_time {
+.wrap .wrapper_body section.wrap_main .order_menu form#order .date_time {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  justify-content: flex-end;
 }
-.wrap .wrapper section.wrap_main .order_menu form#order .date_time p {
+.wrap .wrapper_body section.wrap_main .order_menu form#order .date_time p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -180,7 +181,7 @@ button:hover {
   color: #746F6F;
   margin: 0;
 }
-.wrap .wrapper section.wrap_main .order_menu form#order .date_time select {
+.wrap .wrapper_body section.wrap_main .order_menu form#order .date_time select {
   width: 148px;
   border: 1px solid #000000;
   border-radius: 6px;
@@ -193,10 +194,10 @@ button:hover {
   padding: 0 14px;
   text-align: right;
 }
-.wrap .wrapper section.wrap_main .order_menu form#order .date_time select:focus, .wrap .wrapper section.wrap_main .order_menu form#order .date_time select:hover {
+.wrap .wrapper_body section.wrap_main .order_menu form#order .date_time select:focus, .wrap .wrapper_body section.wrap_main .order_menu form#order .date_time select:hover {
   background: #d0dec4;
 }
-.wrap .wrapper section.wrap_main .order_menu form#order p {
+.wrap .wrapper_body section.wrap_main .order_menu form#order p {
   margin: 0;
   margin-top: 14px;
   font-family: "Inter";
@@ -207,7 +208,7 @@ button:hover {
   letter-spacing: 0.075em;
   color: #325015;
 }
-.wrap .wrapper section.wrap_main .order_menu form#order select {
+.wrap .wrapper_body section.wrap_main .order_menu form#order select {
   width: 100%;
   border: 1px solid #000000;
   border-radius: 6px;
@@ -219,10 +220,10 @@ button:hover {
   letter-spacing: 0.075em;
   padding: 8px 0 8px 17px;
 }
-.wrap .wrapper section.wrap_main .order_menu form#order select:focus, .wrap .wrapper section.wrap_main .order_menu form#order select:hover {
+.wrap .wrapper_body section.wrap_main .order_menu form#order select:focus, .wrap .wrapper_body section.wrap_main .order_menu form#order select:hover {
   background: #d0dec4;
 }
-.wrap .wrapper section.wrap_main .order_menu form#order button.order_sabmit {
+.wrap .wrapper_body section.wrap_main .order_menu form#order button.order_sabmit {
   display: block;
   position: absolute;
   bottom: 15px;
@@ -365,4 +366,36 @@ button:hover {
   background: rgba(0, 0, 0, 0.3);
   z-index: 1;
   top: 0;
+}
+
+#monthHeader {
+  color: #616c57;
+  font-size: 20pt;
+}
+
+.button-container-calendar button {
+  background: #616c57;
+  border-radius: 6px;
+  padding: 5px 9px;
+  top: 0;
+}
+
+.button-container-calendar {
+  margin-bottom: 0;
+}
+
+.table-calendar {
+  border-top: 1px solid #616c57;
+}
+
+#date-picked {
+  left: 13px;
+  text-align: start;
+  color: #616d57;
+  border-top: none;
+  padding-top: 0px;
+  font-size: 19pt;
+  font-weight: bold;
+  position: absolute;
+  top: 402px;
 }/*# sourceMappingURL=style.css.map */
