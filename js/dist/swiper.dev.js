@@ -20,5 +20,6 @@ var swiper = new Swiper(".mySwiper2", {
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar"
-  }
+  },
+  grabCursor: true
 });
