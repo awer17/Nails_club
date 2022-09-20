@@ -61,9 +61,8 @@ button:hover {
   background-color: #F2F0F0;
   border: 1px solid #D9D9D9;
   border-radius: 10px;
-  padding: 17px;
+  padding: 17px 17px 1px 17px;
   box-sizing: border-box;
-  margin-bottom: 6px;
 }
 .wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item img {
   width: 142px;
@@ -115,6 +114,10 @@ button:hover {
   align-self: end;
   justify-self: end;
 }
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .wrap_swiper2 {
+  width: 844px;
+  height: 196px;
+}
 .wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .imges_item {
   margin-top: 18px;
   display: flex;
@@ -127,23 +130,32 @@ button:hover {
   width: 201px;
   height: 178px;
 }
-.wrap .wrapper_body section.wrap_main .wrap_slider div.slider_btn div.btn_top, .wrap .wrapper_body section.wrap_main .wrap_slider div.slider_btn .btn_botton {
+.wrap .wrapper_body section.wrap_main .wrap_slider .btn_top, .wrap .wrapper_body section.wrap_main .wrap_slider .btn_botton {
   position: absolute;
-  top: -26px;
-  right: 267px;
+  top: 16px;
+  right: 100px;
+  left: auto;
   background: #616B57;
-  border-radius: 25px;
-  display: inline-block;
-  padding: 12px 30px;
+  border-radius: 6px;
+  padding: 9px 5px;
+  transform: rotate(90deg);
 }
-.wrap .wrapper_body section.wrap_main .wrap_slider div.slider_btn div.btn_top:hover, .wrap .wrapper_body section.wrap_main .wrap_slider div.slider_btn .btn_botton:hover {
+.wrap .wrapper_body section.wrap_main .wrap_slider .btn_top span, .wrap .wrapper_body section.wrap_main .wrap_slider .btn_botton span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.wrap .wrapper_body section.wrap_main .wrap_slider .btn_top:hover, .wrap .wrapper_body section.wrap_main .wrap_slider .btn_botton:hover {
   background: #447C0B;
 }
-.wrap .wrapper_body section.wrap_main .wrap_slider div.slider_btn div.btn_botton {
+.wrap .wrapper_body section.wrap_main .wrap_slider .btn_botton {
   top: auto;
-  bottom: -26px;
+  bottom: 0px;
 }
-.wrap .wrapper_body section.wrap_main .wrap_slider div.slider_btn div.btn_botton img {
+.wrap .wrapper_body section.wrap_main .wrap_slider .btn_botton img {
   transform: rotate(180deg);
 }
 .wrap .wrapper_body section.wrap_main .order_menu {
@@ -410,4 +422,12 @@ button:hover {
 }
 .date-picker span {
   color: #616c57;
+}
+
+.swiper-wrapper {
+  height: 800px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
