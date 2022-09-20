@@ -56,6 +56,7 @@ button:hover {
 }
 .wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item {
   display: grid;
+  height: 390px;
   grid-template-columns: 142px 1fr;
   width: 880px;
   background-color: #F2F0F0;
@@ -71,6 +72,7 @@ button:hover {
   border-radius: 6px;
 }
 .wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .items_content {
+  margin-top: 20px;
   justify-self: end;
   width: 676px;
   display: grid;
@@ -127,7 +129,7 @@ button:hover {
 .wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .imges_item img {
   display: inline-block;
   width: 201px;
-  height: 178px;
+  height: 165px;
 }
 .wrap .wrapper_body section.wrap_main .wrap_slider .btn_top, .wrap .wrapper_body section.wrap_main .wrap_slider .btn_botton {
   position: absolute;
@@ -409,4 +411,23 @@ button:hover {
 
 .swiper-button-next:after, .swiper-button-prev:after {
   display: none;
+}
+
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .imges_item {
+  height: 250px;
+}
+
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .wrap_swiper2 {
+  height: 190px;
+}
+
+#elem {
+  top: auto;
+  bottom: 0px;
+  position: absolute;
+  z-index: 5;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #616c57;
 }

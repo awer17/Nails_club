@@ -57,6 +57,7 @@ button{
                 position: relative;
                 .slaider_item{
                     display: grid;
+                    height: 390px;
                     //flex-wrap: wrap;
                    // justify-content: space-between;
                     grid-template-columns: 142px 1fr;
@@ -73,6 +74,7 @@ button{
                         border-radius: 6px;
                     }
                     .items_content{
+                        margin-top: 20px;
                         justify-self: end;
                         width: 676px;
                         display: grid;
@@ -130,7 +132,7 @@ button{
                         img{
                             display: inline-block;
                             width: 201px;
-                            height: 178px;
+                            height: 165px;
                         }
                     }
                 }
@@ -423,4 +425,22 @@ button{
     &:after{
         display: none;
     }
+}
+
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .imges_item{
+    height: 250px;
+}
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .wrap_swiper2{
+    height: 190px;
+}
+#elem{
+    top: auto;
+    bottom: 0px;
+    position: absolute;
+    z-index: 5;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+        background:  #616c57;
+    
 }
