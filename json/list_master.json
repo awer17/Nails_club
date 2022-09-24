@@ -42,7 +42,7 @@
                 ["men`s haircut"]}],
     "imges" : ["01.jpeg","bhjbk.jpeg", "nik2.jpeg","nik4.jpeg", "nik6.jpeg","dizayn_nogtey_2020_1.jpeg","nik8.jpeg", "njlnlk.jpeg"]},
 
-    {"id" : 102,
+    {"id" : 103,
     "img": "m001.jpeg",
     "firstNeme": "May",
     "lastName": "Pen",
@@ -56,5 +56,21 @@
                 "women`s haircut",
                 "hair coloring",
                 "hair highlighting"]}],
-    "imges" : ["m02.jpeg","images12.jpeg", "images13.jpeg","images14.jpeg", "images15.jpeg","images16.jpeg","images17.jpeg", "images18.jpeg"]}
+    "imges" : ["m02.jpeg","images12.jpeg", "images13.jpeg","images14.jpeg", "images15.jpeg","images16.jpeg","images17.jpeg"]},
+
+    {"id" : 104,
+    "img": "m001.jpeg",
+    "firstNeme": "Katrin",
+    "lastName": "Delaro",
+    "data" : "15.09.22",
+    "schedule" : "5/2",
+    "speciality": "Nail master",
+    "skill": ["gel nail extension", "acrylic nail extension","gel polish coating","male manicure"],
+    "aboutMe": "I am a licensed and certified nail technician with 13 years of experience in the nail service. I am engaged in handles, I observe all sanitary norms, I work only with professional materials! All instruments are sterilized after each client.",
+    "servis" : [ {"Nail services":
+                ["male manicure",
+                "gel extension",
+                "manicure and extension",
+                "coating nail"]}],
+    "imges" : ["Mental-Strong.jpeg","ms01.jpeg", "ms02.jpeg","ms03.jpeg", "ms04.jpeg","ms05.jpeg","ms06.jpeg", "ms07.jpeg", "ms08.jpeg"]}
 ]
