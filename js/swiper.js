@@ -1,44 +1,59 @@
-  var swiper1 = new Swiper(".mySwiper2", {
-    slidesPerView: 4,
-    spaceBetween: 13,
-    pagination: {
-        el: ".swiper-pagination",
-          type: "progressbar",
-      },
-      grabCursor: true,
-  });
+// var swiper1 = new Swiper(".mySwiper2", {
+//     slidesPerView: 4,
+//     spaceBetween: 13,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         type: "progressbar",
+//     },
+//     grabCursor: true,
+// });
 
   //swaper item master
-  
+const serviselist = document.getElementById("categories",false)
+let serviseСhoice = ''
+serviselist.addEventListener('change', function (){
+    serviseСhoice = serviselist.value
+    initSliders()
+});
 
-  function initSliders() {
+
+
+function initSliders() {
     if (document.querySelector('.mySwiper')) { 
-        // Создаем слайдер
-        function slider () {
-          var swiper = new Swiper(".mySwiper", {
-            direction: "vertical",
-            slidesPerView: 2,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
-            },
-            WatchOverflow: true,
-            spaceBetween: 20,
-          });
 
-          var swiper1 = new Swiper(".mySwiper2", {
-            slidesPerView: 4,
-            spaceBetween: 13,
-            pagination: {
-                el: ".swiper-pagination",
-                  type: "progressbar",
-              },
-              grabCursor: true,
-          });
+        function slider () {
+            var swiper = new Swiper(".mySwiper", {
+                direction: "vertical",
+                slidesPerView: 2,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                WatchOverflow: true,
+                spaceBetween: 20,
+            });
+
+            var swiper1 = new Swiper(".mySwiper2", {
+                slidesPerView: 4,
+                spaceBetween: 13,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
+                },
+                grabCursor: true,
+            });
         }
-       
+        function sliderStart (){
+            swiper.init(true),
+            swiper1.init(true)
+        }
+        function sliderEnd () {
+            swiper.init(false),
+            swiper1.init(false)
+        }
     
         async function getSliderProducts() {
+            
             const file = '../json/list_master.json';
             let response = await fetch(file, {
                 method: 'GET'
@@ -53,16 +68,20 @@
         }
     
         function loadSliderProducts(data) {
+            
             const sliderBody = document.querySelector('.master_list');
             sliderBody.innerHTML = '';
+            const masterNameInput = document.querySelector('#categories')
 
             data.forEach(item => {
+                if(serviseСhoice == item.speciality) {
+                    console.log('ds')
+                }              
                 const imgFoto = item.imges;
                 const idMaster = item.id
                 const imgesFoto =  document.createElement('div')
                 imgFoto.forEach(item =>{
-                  imgesFoto.textContent += `<div class="swiper-slide"><img src="imeges/masters/${idMaster}/${item}" alt="nails"></div>`})
-                console.log(imgesFoto)
+                imgesFoto.textContent += `<div class="swiper-slide"><img src="imeges/masters/${idMaster}/${item}" alt="nails"></div>`})
                 sliderBody.innerHTML += `
                 <div class="swiper-slide item_master">
                 <div class="slaider_item">
@@ -91,15 +110,13 @@
                         </div>
                     </div>
                     <div class="imges_item">   
-
                 </div>
-            </div>
-          ` 
-        })
-            
+            </div>` 
         }
-    
+        )
+        }
         getSliderProducts();
-        
     }}
+
 initSliders()
+

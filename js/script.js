@@ -10,27 +10,28 @@ const servislist = async () =>{
         arrServiseList.push(arrItem)
         return  arrServiseList
     });
-    serviselist.innerHTML = `<option>select from the list</option>`
+    serviselist.innerHTML = `<option value="start" >select from the list</option>`
     arrServiseList.flat().forEach( (index, elem) =>{
         serviselist.innerHTML+= `<option value="${index}"> ${index} </option>`
     })
-        serviselist.firstElementChild.setAttribute("disabled", "disabled")    
+    serviselist.firstElementChild.setAttribute("disabled", "disabled")
 } 
 
 servislist();
+
 
 const servis = document.getElementById("categories")
 
 const nameServise  = async () =>{
     const dataServise = await getListServis();
     const nameServiseList = document.getElementById('nameServiseList')
-    const servis = document.getElementById("categories")
+    // const servis = document.getElementById("categories")
     dataServise.map((item) =>{
         const items = (Object.keys(item))[0]
 
         if ( items == servis.value){
             const itemsNameServis = item[servis.value]
-            nameServiseList.innerHTML = `<option>select from the list</option>`
+            nameServiseList.innerHTML = `<option value="start" >select from the list</option>`
             itemsNameServis.forEach( (index, elem) =>{
                 nameServiseList.innerHTML += `<option value="${index}"> ${index} </option>`
             })
@@ -41,5 +42,8 @@ const nameServise  = async () =>{
 }
 
 
-servis.addEventListener('change', nameServise , true)
+servis.addEventListener('change', nameServise, true)
+// serviselist.addEventListener ( 'change', console.log('j'),true )
+
+
 
