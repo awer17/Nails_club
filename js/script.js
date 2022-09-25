@@ -1,4 +1,4 @@
-//choice servise
+
 
 const servislist = async () =>{
     const serviselist = document.getElementById("categories")

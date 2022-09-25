@@ -32,8 +32,8 @@ button{
             justify-content: space-between;
             header{
                 ul{
-                   list-style-type: none;
-                   a{
+                    list-style-type: none;
+                    a{
                     font-family: 'Inter';
                     font-style: normal;
                     font-weight: 400;
@@ -44,7 +44,7 @@ button{
                     &:hover{
                         color: #447C0B;
                     }                
-                   }
+                    }
                 }
             }
         }
@@ -118,6 +118,16 @@ button{
                             align-self: end;
                             justify-self: end;
                         }
+                    }
+                    div.title{
+                        margin-top: 10px;
+                        grid-column: 1/span 2;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 30px;
+                        line-height: 32px;
+                        color: #000000;
+                        display: none;
                     }
                     .wrap_swiper2{
                         width: 844px;

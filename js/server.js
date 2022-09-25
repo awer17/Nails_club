@@ -1,5 +1,11 @@
-const UNIVER_API =
-    'json/services.json';
+// list masrers
+
+const MASTER_API = 'json/list_master.json';
+
+
+// list servise
+
+const SERVIS_API = 'json/services.json';
 
 const getResource = async(url) => {
     try {
@@ -10,22 +16,15 @@ const getResource = async(url) => {
     }
 }
 
-const getListServis = async () => {
-    const data = await getResource(`${UNIVER_API}`);
-
-    return data;
+const getListMaster = async () => {
+    const data1 = await getResource (`${MASTER_API}`);
+    return data1;
 }
 
 
-//getListUniver();
-// var fs = require('fs')
-// const { arrayBuffer } = require('stream/consumers')
-// var services = fs.readFileSync('json/services.json')
-// var objServis =JSON.parse(data)
-// var objCategories = Object.values(data)
-// const categories = []
-// objCategories.forEach(function(item){
-//     categories.push(Object.keys(item))
-// })
 
-// var a = document.getElementById('categories')
+const getListServis = async () => {
+    const data = await getResource(`${SERVIS_API}`);
+
+    return data;
+}

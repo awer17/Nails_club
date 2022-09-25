@@ -153,6 +153,19 @@ button:hover {
       justify-self: end;
 }
 
+.wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item div.title {
+  margin-top: 10px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 32px;
+  color: #000000;
+  display: none;
+}
+
 .wrap .wrapper_body section.wrap_main .wrap_slider .slaider_item .wrap_swiper2 {
   width: 844px;
   height: 196px;
