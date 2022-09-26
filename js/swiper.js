@@ -38,7 +38,7 @@ function initSliders() {
     if (document.querySelector('.mySwiper')) { 
         async function getSliderProducts() {
             
-            const file = '../json/list_master.json';
+            const file = '..json/list_master.json';
             let response = await fetch(file, {
                 method: 'GET'
             });
