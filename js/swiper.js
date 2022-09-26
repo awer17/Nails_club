@@ -1,12 +1,3 @@
-// var swiper1 = new Swiper(".mySwiper2", {
-//     slidesPerView: 4,
-//     spaceBetween: 13,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         type: "progressbar",
-//     },
-//     grabCursor: true,
-// });
 
 var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
@@ -27,11 +18,19 @@ var swiper = new Swiper(".mySwiper", {
 
   //swaper item master
 const serviselist = document.getElementById("categories",false)
+const servisItemlist = document.getElementById("nameServiseList")
+const itemsFirsName = document.querySelectorAll(".first_name")
 let serviseСhoice = ''
+let itemChoice = servisItemlist.value
 serviselist.addEventListener('change', function (){
     serviseСhoice = serviselist.value
     initSliders()
 });
+
+servisItemlist.addEventListener('change', function(){
+    itemChoice = servisItemlist.value
+    initSliders()
+} )
 
 
 
@@ -59,17 +58,20 @@ function initSliders() {
             
             const sliderBody = document.querySelector('.master_list');
             sliderBody.innerHTML = '';
-            const masterNameInput = document.querySelector('#categories')
 
             data.forEach(item => {
                 const servis = Object.keys(item.servis[0])[0]
-                if(serviselist.value == servis || serviselist.value == "start") {
+                const servisItem =Object.values(item.servis[0])[0]
+
+                if((serviselist.value == servis || serviselist.value == "start" ) && (servisItem.includes(itemChoice) || servisItemlist.value == "start"))  {
+
                     const imgFoto = item.imges;
                     const idMaster = item.id
                     const imgesFoto =  document.createElement('div')
+
                     imgFoto.forEach(item =>{
                     imgesFoto.textContent += `<div class="swiper-slide"><img src="imeges/masters/${idMaster}/${item}" alt="nails"></div>`})
-                    console.log(imgesFoto.textContent)
+
                     sliderBody.innerHTML += `
                     <div class="swiper-slide item_master">
                     <div class="slaider_item">
@@ -112,10 +114,15 @@ function initSliders() {
                     observeSlideChildren: true,
                     observer: true,
                     observeParents:true,
-                });            
-                
+                });                                          
         }
         )
+        const itemsFirsName = document.querySelectorAll(".first_name")
+        itemsFirsName.forEach(item => {
+            console.log(item.textContent)
+        })
+        console.log(itemsFirsName)
+    
         }
         getSliderProducts();
     }}
