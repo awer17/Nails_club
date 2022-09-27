@@ -12,6 +12,10 @@ var months = "";
 var days = "";
 var monthsArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var daysArr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+console.log(today.toLocaleString())
+console.log(today)
+
+
 
 months = monthsArr;
 days = daysArr;
@@ -102,6 +106,9 @@ function showCalendar(month, year) {
           var month = currentTarget.dataset.month - 1;
           var year = currentTarget.dataset.year;
 
+          var a = new Date((month +1) + '/' + date + '/' + year);
+          var b = new Date (today.toLocaleDateString('en-US'))
+          
           for (var i = 0; i < dates.length; i++) {
             dates[i].classList.remove("selected");
           }
@@ -115,9 +122,17 @@ function showCalendar(month, year) {
           if(date < 10){
             date = "0" + date;
           }
-          datePicked.innerHTML = month + "." + date + "." + year;
-        }
 
+          if (a < b){
+            datePicked.innerHTML = 'choose another<br>date'
+            datePicked.classList.add('err_date')
+          } else{
+            datePicked.innerHTML = month + "." + date + "." + year;
+            datePicked.classList.remove('err_date')
+
+          }
+        }
+        
         if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
           cell.className = "date-picker selected";
         }

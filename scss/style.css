@@ -540,6 +540,13 @@ button:hover {
   margin: 0;
 }
 
+#date-picked.err_date {
+  color: red;
+  font-size: 26px;
+  line-height: 24px;
+  text-align: center;
+}
+
 .date-picker {
   border-color: #616c57;
 }

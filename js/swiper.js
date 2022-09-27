@@ -38,10 +38,7 @@ servisItemlist.addEventListener('change', function(){
 nameList.addEventListener('change', function(){
     itemname = nameList.value;
     initSlidersEnditems()
-
 })
-
-
 
 function initSliders() {
     if (document.querySelector('.mySwiper')) { 
@@ -125,7 +122,7 @@ function initSliders() {
                     observeParents:true,
                 });    
                 
-                if( (nameList.value === 'start' && servisItemlist.value === "start") || (serviselist.value == servis && servisItem.includes(itemChoice)  ) ){
+                if( (nameList.value === 'start' && servisItemlist.value === "start") || (serviselist.value == servis && servisItem.includes(itemChoice) )|| (serviselist.value == servis && servisItemlist.value === "start") ){
                     var itemsFirsName = document.querySelectorAll(".first_name")
                     nameList.innerHTML = `<option value="start" >select from the list</option>`
                     itemsFirsName.forEach(item => {
@@ -138,9 +135,6 @@ function initSliders() {
         }
         getSliderProducts();
     }}
-
-initSliders()
-
 
 function initSlidersEnditems() {
     if (document.querySelector('.mySwiper')) { 
@@ -231,7 +225,6 @@ function initSlidersEnditems() {
                         nameList.innerHTML += `<option value=${item.innerHTML}>${item.innerHTML}</option>`
                     })
                     nameList.firstElementChild.setAttribute("disabled", "disabled")        
-            
                 }
             })
         }

@@ -25,7 +25,6 @@ const servis = document.getElementById("categories")
 const nameServise  = async () =>{
     const dataServise = await getListServis();
     const nameServiseList = document.getElementById('nameServiseList')
-    // const servis = document.getElementById("categories")
     dataServise.map((item) =>{
         const items = (Object.keys(item))[0]
 
@@ -45,7 +44,7 @@ const nameServise  = async () =>{
 servis.addEventListener('change', nameServise, true)
 
 
-//nemeMaster
+
 
 
 
