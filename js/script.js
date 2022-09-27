@@ -43,7 +43,10 @@ const nameServise  = async () =>{
 
 
 servis.addEventListener('change', nameServise, true)
-// serviselist.addEventListener ( 'change', console.log('j'),true )
+
+
+//nemeMaster
+
 
 
 
