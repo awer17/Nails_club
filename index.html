@@ -149,9 +149,8 @@
                         <select name="neme_master" id="nameList" required="required">
                             <option value="start" >select from the list</option>
                         </select>
-                        
-                        
-                        <button class="btn order_sabmit">Sign up</button>
+                        <div class="error_sabmit">Enter data</div>
+                        <button id="sabmit1" class="btn order_sabmit">Sign up</button>
                     </form>
                 </div>
                 
@@ -159,9 +158,9 @@
             </section>
         </div>
 
-        <!-- <div class="bg"></div> -->
+        <div class="bg" ></div>
 
-        <!-- <div class="modal_submit">
+        <div class="modal_submit modal_first">
             <img src="imeges/svg/nailcub.svg" alt="NailClublogo">
             <p>leave your firstname
                 and phone number
@@ -172,21 +171,21 @@
                     <label for="phone_number">Phone number:</label><br>
                     <input type="tel" id="phone" name="phone_number" pattern="+[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                     required placeholder="+___(__)___-__-__">
-                    <button id="submit">Submit</button>
+                    <button id="submit_lest">Submit</button>
                 </form>
-        </div> -->
+        </div>
 
-        <!-- <div class="modal_submit">
+        <div class="modal_submit modal_lest">
             <img src="imeges/svg/nailcub.svg" alt="NailClublogo">
             <p class="s_end">Entry assigned</p>
             <button id="submit_end">Submit</button>
-        </div> -->
+        </div>
 
         <footer>
             <div class="footer_wrapper">
                 <a href="#">6705 E Tennessee Ave, Denver, CO 80004</a>
                 <div class="developer"><span>2022 </span><a href="#">KSEgroup</a></div>
-                <a href="3" class="logo_footer"><img src="imeges/svg/nailcub_footer.svg" alt=""></a>
+                <a href="#" class="logo_footer"><img src="imeges/svg/nailcub_footer.svg" alt=""></a>
             </div>
         </footer>
 
@@ -196,9 +195,9 @@
         <!-- sliser swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script src="js/swiper.js"></script>
-
         <script src="js/server.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/modal.js" ></script>
     </div>
 </body>
 </html>

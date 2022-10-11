@@ -12,8 +12,7 @@ var months = "";
 var days = "";
 var monthsArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var daysArr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-console.log(today.toLocaleString())
-console.log(today)
+
 
 
 
@@ -109,6 +108,18 @@ function showCalendar(month, year) {
           var a = new Date((month +1) + '/' + date + '/' + year);
           var b = new Date (today.toLocaleDateString('en-US'))
           
+          // const launchDate = new Date('July 1, 1999, 12:00:00');
+          // const futureDate = new Date();
+          // futureDate.setTime(launchDate.getTime());
+
+          // console.log(futureDate);
+          // expected output: Thu Jul 01 1999 12:00:00 GMT+0200 (CEST)
+
+          // const fiveMinutesInMillis = 5 * 60 * 1000;
+          // futureDate.setTime(futureDate.getTime() + fiveMinutesInMillis);
+
+          // console.log(futureDate);
+
           for (var i = 0; i < dates.length; i++) {
             dates[i].classList.remove("selected");
           }
@@ -129,7 +140,6 @@ function showCalendar(month, year) {
           } else{
             datePicked.innerHTML = month + "." + date + "." + year;
             datePicked.classList.remove('err_date')
-
           }
         }
         
