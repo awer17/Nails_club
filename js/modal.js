@@ -5,6 +5,9 @@ var sabmitLest = document.getElementById('submit_lest');
 var modalLest = document.querySelector('.modal_lest');
 var sabmitEnd = document.querySelector('#submit_end');
 const errorSabmit = document.querySelector('.error_sabmit')
+const userName = document.querySelector('#username')
+const userPhoneNumber = document.querySelector('#phone') 
+const eroorSabmitUser = document.querySelector('.error_user')
 
 
 sabmit1.addEventListener('click', function(event){
@@ -51,14 +54,32 @@ sabmit1.addEventListener('click', function(event){
 
 sabmitLest.addEventListener('click', (event) => {
     event.preventDefault();
-    modaFirst.classList.remove('active');
-    modalLest.classList.add('active')
+    console.log(userName.value)
+    if (userName.value !== '' && userPhoneNumber.value !== ''){
+        modaFirst.classList.remove('active');
+        modalLest.classList.add('active')    
+    }
+    else{
+        eroorSabmitUser.classList.add('active')
+        if(userName.value == ''){
+            userName.previousElementSibling.previousElementSibling.classList.add('color_error');
+        }else{
+            userName.previousElementSibling.previousElementSibling.classList.remove('color_error');
+        }
+        if(userPhoneNumber.value == ''){
+            userPhoneNumber.previousElementSibling.previousElementSibling.classList.add('color_error');
+        } else{
+            userPhoneNumber.previousElementSibling.previousElementSibling.classList.remove('color_error');
+        }
+
+    }x
 })
 
 sabmitEnd.addEventListener('click',(event) => {
     event.preventDefault();
-    modalLest.classList.remove('active')
+    modalLest.classList.remove('active');
     bgModal.classList.remove('active');
+    location.reload();
 })
 
 

@@ -169,8 +169,9 @@
                     <label for="username">First Name:</label><br>
                     <input type="text" id="username" name="username" placeholder="_______"><br>
                     <label for="phone_number">Phone number:</label><br>
-                    <input type="tel" id="phone" name="phone_number" pattern="+[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                    required placeholder="+___(__)___-__-__">
+                    <input type="number" id="phone" minlength= "7" maxlength="12" name="phone_number" pattern="+[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                    required placeholder="___(__)___-__-__" >
+                    <p class="error_user" >Enter data</p>
                     <button id="submit_lest">Submit</button>
                 </form>
         </div>

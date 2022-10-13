@@ -397,6 +397,7 @@ button:hover {
   text-align: center;
   margin: 0 auto;
   width: 420px;
+  height: 536px;
   border-radius: 10px;
   background: #FFFFFF;
   border: 1px solid #b0acac;
@@ -411,6 +412,10 @@ button:hover {
   width: 320px;
   margin: 0 auto;
   margin-bottom: 24px;
+}
+
+.wrap .modal_submit .color_error {
+  color: red;
 }
 
 .wrap .modal_submit p.s_end {
@@ -602,7 +607,14 @@ button:hover {
   line-height: 20px;
 }
 
-div.active {
+.error_user {
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: red;
+}
+
+div.active, p.active {
   display: block;
 }
 /*# sourceMappingURL=style.css.map */

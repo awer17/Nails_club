@@ -321,6 +321,7 @@ button{
         text-align: center;
         margin: 0 auto;
         width: 420px;
+        height: 536px;
         border-radius: 10px;
         background: #FFFFFF;
         border: 1px solid #b0acac;
@@ -332,6 +333,9 @@ button{
             width: 320px;
             margin: 0 auto;
             margin-bottom: 24px;
+        }
+        .color_error{
+            color: red;
         }
         p.s_end{
             margin-top: 10px;
@@ -477,8 +481,14 @@ button{
     font-size: 26px;
     line-height: 20px;
 }
+.error_user{
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: red;
+}
 
-div.active{
+div.active, p.active {
     display: block;
 }
 
